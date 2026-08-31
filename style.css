@@ -1,0 +1,136 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    padding: 30px 0;
+}
+
+.nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.nav__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.row{
+    width: 100%;
+    max-width: 1520px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    padding: 10px 0;
+    margin: 0;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+}
+.nav__space{
+    margin-left: 20px;
+}
+.nav__link--button{
+    padding: 8px 20px;
+    background-color: #6415ff;
+    color: #fff;
+    border-radius: 45px;
+    transition: all 0.3s ease;
+}
+
+/* landing Section */
+
+@media (max-width: 1500px){
+    .landing-row{
+        flex-direction: column;
+        text-align: center;
+    }
+    .landing-description,
+    .Office-image{
+        flex: none;
+        width: 100%;
+    }
+    .Office-image img{
+        margin: 40px 0 auto;
+        max-width: 820px;
+    }
+}
+.landing__container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 32px;
+}
+.landing-row{
+    display: flex;
+    gap: 30px;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding-top:72px;
+    padding-bottom: 96px;
+}
+.landing-description{ 
+    flex: 0 0 44%;
+    max-width: 540px;
+}
+.landing-description h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: #000;
+    margin-bottom: 24px;
+}
+.landing-description p{
+    width: 90%;
+    font-size: 18px;
+    color: #000;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    max-width: 520px;
+}
+.Right-hero__image{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.Office-image img{
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+}
