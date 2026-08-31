@@ -72,6 +72,9 @@ li{
     border-radius: 45px;
     transition: all 0.3s ease;
 }
+.nav__link--button:hover{
+    background-color: #4a0fb3;
+}
 
 /* landing Section */
 
@@ -133,4 +136,33 @@ li{
     height: auto;
     display: block;
     margin-left: auto;
+}
+.E-mail__wrapper{
+    width: 100%;
+    max-width: 520px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 45px;
+    padding: 8px 12px;
+    margin-top: 20px;
+}
+.email__input{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 45px;
+}
+.email__button{
+    padding: 15px 50px;
+    background-color: #6415ff;
+    color: #fff;
+    border-radius: 45px;
+    transition: all 0.3s ease;
+}
+.email__button:hover{
+    background-color: #4a0fb3;
 }
