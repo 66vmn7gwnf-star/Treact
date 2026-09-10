@@ -702,3 +702,220 @@ li{
 .enterprise__button:hover{
     opacity:.85;
 }
+
+/* testimonial section */
+
+.testimonials__row{
+
+    display:flex;
+
+
+
+    justify-content:space-between;
+
+    gap:80px;
+
+    padding:96px 0;
+
+}
+
+.testimonials__image{
+
+    flex:0 0 45%;
+
+}
+.testimonials__image img{
+
+    width:100%;
+
+    max-width:600px;
+
+    display:block;
+
+}
+
+.testimonials__content{
+
+    flex:0 0 55%;
+
+}
+
+.testimonials__content h2{
+
+    font-size:48px;
+
+    line-height:1.2;
+
+    margin:18px 0;
+
+}
+.testimonials__content h4{
+
+    font-size:22px;
+
+    margin-bottom:18px;
+
+}
+
+.testimonials__content span{
+
+    color:#6415ff;
+
+}
+.testimonial__intro{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#7c8ba1;
+
+    margin-bottom:36px;
+
+}
+.testimonials__description{
+
+    flex:1;
+
+}
+
+.stars{
+
+    color:#f6ad55;
+
+    font-size:22px;
+
+    letter-spacing:3px;
+
+    margin-bottom:18px;
+
+}
+
+.testimonial__review{
+
+    line-height:1.9;
+
+    color:#4a5568;
+
+    margin-bottom:40px;
+
+}
+.girl-profile{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial__footer{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+
+.testimonial__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* FAQ Section */
+
+.faq__header{
+    width:100%;
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 60px;
+}
+.faq .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faq__header h5{
+
+    color:#6415ff;
+
+    font-size:16px;
+
+    letter-spacing:2px;
+
+    margin-bottom:16px;
+
+}
+
+.faq__header h2{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.faq__header h2 span{
+
+    color:#6415ff;
+
+}
+
+.faq__header p{
+
+    color:#7c8ba1;
+
+    line-height:1.7;
+
+}
+
+.faq__list{
+
+    max-width:900px;
+    width:90%;
+    margin:0 auto;
+}
+
+.faq__item{
+    width:100%;
+    margin-bottom:18px;
+
+}
+
+.faq__question{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 30px;
+
+    background:#edf2f7;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.faq__question:hover{
+
+    background:#e2e8f0;
+
+}
+
+.faq__icon{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
