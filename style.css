@@ -7,21 +7,31 @@
 body{
     font-family:'Inter', sans-serif;
 }
+@media (max-width: 1024px){
+    .nav__links{
+        display: none;
+    }
+    .nav__menu-btn{
+        display: block;
+        display: flex;
+    }
+}
 @media (max-width: 768px){
-    .nav__container{
-        flex-direction: column;
-        align-items: center;
-    }
-    .row{
-        flex-direction: column;
-        align-items: center;
-    }
+    
     .nav__space{
         margin-left: 0;
         margin-top: 10px;
     }
     .nav__link--button{
         margin-top: 10px;
+    }
+    .nav__links{
+    display: none;
+    }  
+    .nav__menu-btn{
+    justify-content: center;
+    align-items: center;
+    display: flex;
     }
 }
 header{
@@ -94,7 +104,26 @@ li{
 .nav__link--button:hover{
     background-color: #4a0fb3;
 }
+.nav__menu-btn{
+    display: none;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex !important;
+}
 
+.nav__menu-btn span{
+    width: 24px;
+    height: 2.5px;
+    background: #6415ff;
+    border-radius: 999px;
+    margin: 3px 0;
+}
 /* landing Section */
 
 @media (max-width: 1500px){
