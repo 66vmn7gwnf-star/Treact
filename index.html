@@ -17,7 +17,7 @@ rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
-<script src="./script.js"> </script>
+
 
 <body>
 
@@ -40,14 +40,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
             <li><a href="#signup" class="nav__link nav__link--button">Sign Up</a></li>
             </ul> 
 
-            <button class="nav__menu-btn">
+            <button class="nav__menu-btn" id="menu-btn" aria-label="Open navigation">
     <span></span>
     <span></span>
     <span></span>
 </button>
 
 <div class="mobile__menu" id="mobile-menu">
-
+<div class="overlay" id="overlay"></div>
     <a href="#about">About</a>
 
     <a href="#blog">Blog</a>
@@ -63,6 +63,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     </a>
 
 </div>
+
         </div>      
     </div>
     </nav>
@@ -734,4 +735,5 @@ And we have got answers to all of them. Lorem ipsum dolor sit amet, consectetur 
 </footer>
     <!-- Additional sections can be added here -->
 </body>
+<script src="./script.js"> </script>
 </html>

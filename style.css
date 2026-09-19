@@ -9,13 +9,13 @@ body{
 }
 .mobile__menu{
 
-    position:absolute;
+    position:fixed;
 
     top:90px;
 
-    right:20px;
+    right:24px;
 
-    width:260px;
+    width:300px;
 
     background:white;
 
@@ -23,15 +23,29 @@ body{
 
     padding:32px;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-
-    display:none;
-
+    display:flex;
     flex-direction:column;
+    gap:24px;
 
-    gap:20px;
+    box-shadow:0 20px 40px rgba(248, 245, 245, 0.15);
 
-    z-index:1000;
+    transform:translateY(-20px);
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+.mobile__menu.active{
+
+    opacity:1;
+    visibility:visible;
+
+    transform:translateY(0);
 
 }
 
@@ -60,21 +74,79 @@ body{
     text-align:center;
 
 }
-
-.mobile__menu.active{
-
-    display:flex;
-
+.nav__menu-btn.active span:nth-child(1){
+    transform:rotate(45deg) translate(5px,5px);
 }
 
+.nav__menu-btn.active span:nth-child(2){
+    opacity:0;
+}
+
+.nav__menu-btn.active span:nth-child(3){
+    transform:rotate(-45deg) translate(6px,-6px);
+}
+
+.nav__menu-btn{
+    display: none;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav__menu-btn span{
+    display: block;
+    width: 24px;
+    height: 2.5px;
+    background: #6415ff;
+    border-radius: 999px;
+    margin: 3px 0;
+    transition: all .3s ease;
+}
+.overlay{
+    position: fixed;
+    inset: 0;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:998;
+}
+
+.overlay.active{
+    opacity:1;
+    visibility:visible;
+}
 @media (max-width: 1024px){
     .nav__links{
         display: none;
     }
     .nav__menu-btn{
-        display: block;
+       
         display: flex;
     }
+}
+@media (min-width:1025px){
+
+    .nav__links{
+        display:flex;
+    }
+
+    .nav__menu-btn{
+        display:none;
+    }
+
+    .mobile__menu{
+        display:none !important;
+    }
+
 }
 @media (max-width: 768px){
     
@@ -164,26 +236,7 @@ li{
 .nav__link--button:hover{
     background-color: #4a0fb3;
 }
-.nav__menu-btn{
-    display: none;
-    width: 48px;
-    height: 48px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    display: flex !important;
-}
 
-.nav__menu-btn span{
-    width: 24px;
-    height: 2.5px;
-    background: #6415ff;
-    border-radius: 999px;
-    margin: 3px 0;
-}
 /* landing Section */
 
 @media (max-width: 1500px){
