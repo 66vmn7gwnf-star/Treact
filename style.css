@@ -926,7 +926,15 @@ li{
 
     color: #7c8ba1;
 }
-
+.blog__description h5{
+    font-size: 18px;
+    font-weight: 700;
+    color: #6415ff;
+    margin: 0 0 16px;
+}
+.blog__description h2 span{
+    color: #6415ff;
+}
 
 /* =====================================================
    BUTTON
