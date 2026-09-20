@@ -1337,143 +1337,569 @@ li{
 }
 
 
-/* values section */
+/* =====================================================
+   VALUES SECTION
+===================================================== */
 
-@media (max-width: 1024px){
 
-    .values__row{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 56px;
-    }
-
-    .values__description{
-        width:100%;
-        max-width:600px;
-    }
-
-    .values__image{
-        width:70%;
-        order:2;
-    }
-
-    .values__image img{
-        width:100%;
-    }
-
-}
+/* ---------- MAIN CONTAINER ---------- */
 
 .values__container{
-    width:100%;
-    max-width:1280px;
-    margin:0 auto;
-    padding:0 32px;
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding: 0 32px;
+
+    box-sizing: border-box;
 }
+
+
+/* ---------- MAIN ROW ---------- */
 
 .values__row{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:80px;
-    padding:96px 0;
-}
-.values__description{
-    flex:1;
-    flex-direction:column;
-    max-width:560px;
-}
-.values__image{
-    flex:1;
-    display:flex;
-    justify-content:flex-end;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 80px;
+
+    padding: 96px 0;
 }
 
-.values__image img{
-    width:100%;
-    max-width:620px;
+
+/* =====================================================
+   DESCRIPTION / LEFT SIDE
+===================================================== */
+
+.values__description{
+    flex: 1;
+
+    max-width: 560px;
+
+    display: flex;
+    flex-direction: column;
 }
+
+
+/* ---------- SMALL TITLE ---------- */
+
 .values__description h5{
-    color:#6415ff;
-    font-size:16px;
-    font-weight:700;
-    letter-spacing:2px;
-    margin-bottom:16px;
+    color: #6415ff;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin: 0 0 16px;
 }
+
+
+/* ---------- MAIN HEADING ---------- */
 
 .values__description h2{
-    font-size:48px;
-    line-height:1.2;
-    margin-bottom:24px;
+    font-size: 48px;
+
+    line-height: 1.2;
+
+    font-weight: 900;
+
+    color: #000;
+
+    margin: 0 0 24px;
 }
 
 .values__description h2 span{
-    color:#6415ff;
+    color: #6415ff;
 }
 
-.values__description p{
-    font-size:18px;
-    line-height:1.8;
-    color:#7c8ba1;
-    margin-bottom:36px;
+
+/* ---------- DESCRIPTION ---------- */
+
+.values__description > p{
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #7c8ba1;
+
+    margin: 0 0 36px;
 }
+
+
+/* =====================================================
+   VALUES FEATURES
+===================================================== */
 
 .values__features{
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    margin:40px 0;
+    display: flex;
+
+    gap: 40px;
+
+    margin: 0 0 36px;
 }
+
+
+/* ---------- INDIVIDUAL VALUE ---------- */
+
 .value{
-    flex:1;
+    flex: 1;
+
     text-align: left;
 }
+
+
+/* ---------- VALUE TITLE ---------- */
+
 .value__title{
-    display:flex;
-    align-items:center;
-    gap:14px;
-    margin-bottom:16px;
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 12px;
 }
+
+
+/* ---------- VALUE HEADING ---------- */
+
 .value h4{
-    font-size:22px;
-    font-weight:700;
-    color:#243e63;
+    font-size: 22px;
+
+    font-weight: 700;
+
+    color: #243e63;
+
+    margin: 0;
 }
+
+
+/* ---------- VALUE DESCRIPTION ---------- */
+
 .value p{
-    margin-top:12px;
-    color:#7c8ba1;
-    line-height:1.8;
-    font-size:16px;
+    margin: 0;
+
+    color: #7c8ba1;
+
+    line-height: 1.8;
+
+    font-size: 16px;
 }
+
+
+/* =====================================================
+   VALUE ICON
+===================================================== */
+
 .value__icon{
-    width:36px;
-    height:36px;
+    width: 36px;
+    height: 36px;
 
-    border-radius:50%;
+    flex-shrink: 0;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    border-radius: 50%;
 
-    font-size:18px;
-    font-weight:bold;
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 18px;
+
+    font-weight: bold;
 }
+
+
+/* Green */
+
 .value__icon--green{
-    background:#9ae6b4;
-    color:#276749;
+    background: #9ae6b4;
+
+    color: #276749;
 }
+
+
+/* Red */
+
 .value__icon--red{
-    background:#feb2b2;
-    color:#c53030;
+    background: #feb2b2;
+
+    color: #c53030;
 }
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
 .values__button{
-    display:inline-block;
-    padding:14px 34px;
-    background:#6415ff;
-    color:white;
-    border-radius:999px;
-    text-decoration:none;
-    font-weight:700;
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 150px;
+    height: 52px;
+
+    background: #6415ff;
+
+    color: white;
+
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: all .3s ease;
+}
+
+.values__button:hover{
+    background: #4a0fb3;
+}
+
+
+/* =====================================================
+   IMAGE / RIGHT SIDE
+===================================================== */
+
+.values__image{
+    flex: 1;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    order: 2;
+}
+
+.values__image img{
+    width: 100%;
+
+    max-width: 620px;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* =====================================================
+   TABLET
+   769px - 1024px
+===================================================== */
+
+@media (max-width: 1024px){
+
+    .values__container{
+        padding: 0 40px;
+    }
+
+
+    .values__row{
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        gap: 56px;
+
+        padding: 80px 0;
+    }
+
+
+    /* IMAGE FIRST */
+
+    .values__image{
+        width: 100%;
+
+        max-width: 700px;
+
+        order: 1;
+
+        justify-content: center;
+    }
+
+
+    .values__image img{
+        width: 100%;
+
+        max-width: 700px;
+
+        margin: 0 auto;
+    }
+
+
+    /* TEXT SECOND */
+
+    .values__description{
+        width: 100%;
+
+        max-width: 700px;
+
+        order: 2;
+
+        align-items: center;
+    }
+
+
+    .values__description h2{
+        font-size: 44px;
+    }
+
+
+    .values__description > p{
+        max-width: 600px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* VALUES */
+
+    .values__features{
+        width: 100%;
+
+        max-width: 650px;
+
+        justify-content: center;
+
+        text-align: left;
+    }
+
+
+    /* BUTTON */
+
+    .values__button{
+        margin: 0 auto;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   481px - 768px
+===================================================== */
+
+@media (max-width: 768px){
+
+    .values__container{
+        padding: 0 20px;
+    }
+
+
+    .values__row{
+        gap: 44px;
+
+        padding: 64px 0;
+    }
+
+
+    /* IMAGE */
+
+    .values__image{
+        width: 100%;
+
+        max-width: 600px;
+    }
+
+
+    .values__image img{
+        width: 100%;
+    }
+
+
+    /* TEXT */
+
+    .values__description{
+        width: 100%;
+
+        max-width: 600px;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .values__description h5{
+        font-size: 15px;
+    }
+
+
+    .values__description h2{
+        font-size: 38px;
+
+        line-height: 1.2;
+    }
+
+
+    .values__description > p{
+        font-size: 16px;
+
+        line-height: 1.7;
+
+        max-width: 550px;
+    }
+
+
+    /* VALUES */
+
+    .values__features{
+        width: 100%;
+
+        max-width: 600px;
+
+        gap: 24px;
+
+        text-align: left;
+    }
+
+
+    .value{
+        text-align: left;
+    }
+
+
+    .value h4{
+        font-size: 20px;
+    }
+
+
+    .value p{
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    /* BUTTON */
+
+    .values__button{
+        margin: 0 auto;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL PHONE
+   0px - 480px
+===================================================== */
+
+@media (max-width: 480px){
+
+    .values__container{
+        padding: 0 16px;
+    }
+
+
+    .values__row{
+        gap: 36px;
+
+        padding: 56px 0;
+    }
+
+
+    /* IMAGE */
+
+    .values__image{
+        width: 100%;
+
+        max-width: 350px;
+    }
+
+
+    .values__image img{
+        width: 100%;
+    }
+
+
+    /* TEXT */
+
+    .values__description{
+        width: 100%;
+
+        max-width: 350px;
+    }
+
+
+    .values__description h5{
+        font-size: 14px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .values__description h2{
+        font-size: 32px;
+    }
+
+
+    .values__description > p{
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    /* STACK VALUE CARDS */
+
+    .values__features{
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 28px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .value{
+        width: 100%;
+
+        text-align: left;
+    }
+
+
+    .value__title{
+        gap: 12px;
+    }
+
+
+    .value h4{
+        font-size: 20px;
+    }
+
+
+    .value p{
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    /* BUTTON */
+
+    .values__button{
+        width: 150px;
+
+        height: 50px;
+
+        margin: 0 auto;
+    }
+
 }
 
 /* pricing section */
